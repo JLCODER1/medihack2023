@@ -34,18 +34,15 @@ def get_more_details(url : str) -> str:
     paragraphs = soup.find_all('p')
     if paragraphs:
         for paragraph in paragraphs:
-            if (paragraph):
-                result += " ".join(paragraph.get_text().split())
-                result += '\n\n'
+            result += " ".join(paragraph.get_text().split())
+            result += '\n\n'
                 
     # return the result
     return result
 
 def main(): 
     question = 'How can poop determine how healthy a patient is'
-
-    #url param needs to replace ' ' with '+'
-    url = search(question.replace(' ', '+'))
+    url = search(question)
     result = get_more_details(url)
     print(question + '?')
 

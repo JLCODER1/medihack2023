@@ -6,3 +6,10 @@ This program performs a Google Search and extracts key words from the search res
 
  ## To execute the google search
   `python run_google_search.py`
+
+## To execute the openai summarization
+  `Please update to your OPENAPI Key`
+  `python openai_summary.py`
+
+## To execute ui
+  `streamlit run run_ui.py`
