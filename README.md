@@ -12,4 +12,4 @@ This program performs a Google Search and extracts key words from the search res
   `python openai_summary.py`
 
 ## To execute ui
-  `streamlit run run_ui.py`
+  `streamlit run streamlitui.py`
